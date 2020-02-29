@@ -11,7 +11,7 @@ pipeline{
     stage ('install modules'){
       steps{
         sh '''
-          npm install --verbose -d 
+          npm clean-install --verbose -d 
         '''
       }
     }
